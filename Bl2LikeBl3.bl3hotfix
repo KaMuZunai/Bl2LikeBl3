@@ -528,10 +528,10 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Gamepla
 # Cryo Enemie Damage Taken
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/StatusEffects/StatusEffect_Cryo_DA.StatusEffect_Cryo_DA,AttributeEffects,0,,((AttributeData=/Game/GameData/Attributes/Damage/Att_DamageTakenMultiplier.Att_DamageTakenMultiplier,ModifierType=ScaleSimple,BaseModifierValue=(BaseValueConstant=1.0,BaseValueScale=1.5))
 
-# Gold Chest Cost Money
-SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/UI/InteractionPrompt/UIData_GoldenKey.UIData_GoldenKey,ActionText,0,,Use Money ([cashicon]%i)
-SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/UI/InteractionPrompt/UIData_GoldenKey.UIData_GoldenKey,CurrencyType,0,,/Game/Gear/_Shared/_Design/InventoryCategories/InventoryCategory_Money
-SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/UI/InteractionPrompt/UIData_GoldenKey.UIData_GoldenKey,Cost.BaseValueConstant,0,,50000000
+# Gold Chest Cost Eridium
+SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/UI/InteractionPrompt/UIData_GoldenKey.UIData_GoldenKey,ActionText,0,,Use Eridium ([eridiumicon]%i)
+SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/UI/InteractionPrompt/UIData_GoldenKey.UIData_GoldenKey,CurrencyType,0,,/Game/Gear/_Shared/_Design/InventoryCategories/InventoryCategory_Eridium
+SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/UI/InteractionPrompt/UIData_GoldenKey.UIData_GoldenKey,Cost.BaseValueConstant,0,,150
 
 # Diamond Armory Cost Eridium
 SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/PatchDLC/DiamondLootChest/InteractiveObjects/DiamondChest/Data/UIData_DiamondKeyUsePrompt.UIData_DiamondKeyUsePrompt,ActionText,0,,Use Eridium ([eridiumicon]%i)
@@ -1454,6 +1454,132 @@ SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_ItemRarit
 SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_ItemRarity.DataTable_ItemRarity,Rare,BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191,0,,2.15
 SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_ItemRarity.DataTable_ItemRarity,VeryRare,BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191,0,,0.42
 SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_ItemRarity.DataTable_ItemRarity,Legendary,BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191,0,,0.026
+
+# Normal Drop Modifiers
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,Normal,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,Normal,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,Normal,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,Normal,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,Normal,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,0,,1.0
+
+# VeryGood Drop Modifiers
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,VeryGood,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,VeryGood,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,10.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,VeryGood,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,15.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,VeryGood,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,20.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,VeryGood,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,0,,30.0
+
+# WhiteChest Drop Modifiers
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,WhiteChest,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,WhiteChest,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,20.533
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,WhiteChest,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,51.572
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,WhiteChest,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,52.800
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,WhiteChest,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,0,,85.292
+
+# RedChest Drop Modifiers
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,RedChest,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,RedChest,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,6.016
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,RedChest,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,482.718
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,RedChest,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,1029.607
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,RedChest,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,0,,3326.423
+
+# Badass Drop Modifiers
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,Badass,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,Badass,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,63.263
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,Badass,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,362.038
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,Badass,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,411.842
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,Badass,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,0,,332.642
+
+# GoldenChest Drop Modifiers
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,GoldenChest,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,GoldenChest,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,GoldenChest,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,GoldenChest,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,1000.000
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,GoldenChest,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,0,,1794.872
+
+# Anointed Drop Modifiers
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,Anointed,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,Anointed,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,64.064
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,Anointed,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,3016.988
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,Anointed,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,3088.821
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,Anointed,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,0,,3326.423
+
+# SuperBadass Drop Modifiers
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,SuperBadass,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,SuperBadass,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,8.008
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,SuperBadass,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,2453.817
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,SuperBadass,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,7207.250
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,SuperBadass,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,0,,6652.846
+
+# UltimateBadass Drop Modifiers
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,UltimateBadass,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,UltimateBadass,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,8.008
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,UltimateBadass,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,1407.927
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,UltimateBadass,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,11325.678
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,UltimateBadass,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,0,,26611.384
+
+# VendingMachine Drop Modifiers
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,VendingMachine,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,VendingMachine,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,5.619
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,VendingMachine,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,49.400
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,VendingMachine,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,108.379
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,VendingMachine,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,0,,175.074
+
+# TrialsChestNoGem Drop Modifiers
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,8.008
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,1930.872
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,8236.857
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,0,,33264.230
+
+# TrialsChestOneGem Drop Modifiers
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,8.008
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,1407.927
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,9884.228
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,0,,49896.346
+
+# TrialsChestTwoGems Drop Modifiers
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,8.008
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,884.983
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,11531.600
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,0,,66528.461
+
+# TrialsChestThreeGems Drop Modifiers
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,8.008
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,40.226
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,13796.735
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,0,,99792.692
+
+# TrialsChestFourGems Drop Modifiers
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestFourGems,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestFourGems,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,8.008
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestFourGems,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,40.226
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestFourGems,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,11737.521
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestFourGems,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,0,,133056.923
+
+# TyphonDeadDrop Drop Modifiers
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TyphonDeadDrop,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TyphonDeadDrop,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,8.008
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TyphonDeadDrop,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,2011.325
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TyphonDeadDrop,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,8236.857
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TyphonDeadDrop,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,0,,26611.384
+
+# VeteranVendingMachine Drop Modifiers
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,VeteranVendingMachine,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,VeteranVendingMachine,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,240.241
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,VeteranVendingMachine,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,1568.833
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,VeteranVendingMachine,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,5148.035
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,VeteranVendingMachine,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,0,,16632.115
+
+# LilithEndChest Drop Modifiers
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,LilithEndChest,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,LilithEndChest,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,LilithEndChest,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,LilithEndChest,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,411842.857
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,LilithEndChest,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,0,,26611384.615
 
 # Mayhem 11 Description
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/ModifierSets/UI/Enemies/ModUiStat_Mayhem2_ToEleven.ModUiStat_Mayhem2_ToEleven,Description,0,,UwU Ayaya.
