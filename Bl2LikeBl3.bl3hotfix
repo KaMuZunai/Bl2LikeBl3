@@ -1557,9 +1557,9 @@ SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_
 # UltimateBadass Drop Modifiers
 SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,UltimateBadass,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,1.0
 SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,UltimateBadass,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,8.008
-SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,UltimateBadass,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,1407.927
-SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,UltimateBadass,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,11325.678
-SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,UltimateBadass,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,0,,26611.384
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,UltimateBadass,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,1488.380
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,UltimateBadass,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,11737.521
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,UltimateBadass,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,0,,13305.692
 
 # VendingMachine Drop Modifiers
 SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,VendingMachine,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,1.0
