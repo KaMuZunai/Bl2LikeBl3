@@ -2473,3 +2473,6 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Gamepla
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_COV.DataTable_WeaponBalance_Unique_COV,AR_HeatFirerate,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.5
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,AR_RebelYell,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.6
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_ATL.DataTable_WeaponBalance_Unique_ATL,AR_Portals,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.2
+
+# Mayhem Level Slider
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Mayhem2/MayhemModeTwo.MayhemModeTwo,MaxMayhemLevel,0,,12
